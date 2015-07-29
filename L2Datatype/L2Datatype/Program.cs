@@ -13,7 +13,22 @@ namespace L2Datatype
 		/// <param name="args">The command-line arguments.</param>
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+			Student student = new Student ();
+			student._age = 28;
+
+			Calculate (student);
+
+			Console.WriteLine (student._age);
+			Console.ReadLine ();
+		}
+
+		/// <summary>
+		/// Calculate the specified student.
+		/// </summary>
+		/// <param name="student">Student.</param>
+		static void Calculate(Student student)
+		{
+			student._age += 1;
 		}
 	}
 }
